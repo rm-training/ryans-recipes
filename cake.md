@@ -1,7 +1,8 @@
 # Cake
 
-## Not pastries
+## Specialty tarts
 
 ---
 
-Flour
+* Flour
+* Eggs
