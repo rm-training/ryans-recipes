@@ -1,6 +1,6 @@
 # Cake
 
-## Specialty cakes
+## Specialty tarts
 
 ---
 
