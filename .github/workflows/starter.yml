@@ -35,12 +35,19 @@ jobs:
           ls -la
           
   job2:
+    name: Create file
     runs-on: ubuntu-latest
-    
-    needs: job1
-    
-    steps: 
-      - uses: actions/checkout@v3
+    steps:
+      - name: Create a file
+        run: echo "Hello World" > hello-world.txt
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        # "with" passes arguments to an "action"
+        with:
+          # the name of the "zip" that will be generated
+          name: bundle
+          # what file(s) are zipped
+          path: hello-world.txt
       
       
       
